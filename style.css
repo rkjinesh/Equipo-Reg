@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: end;
+    align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)), url('https://www.parallels.com/blogs/ras/app/uploads/2021/06/5-Ways-the-Pandemic-Impacted-Healthcare-IT-Solutions-1.jpg') ;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.Caption{
+    width: 100%;
+    max-width: 650px;
+    padding-bottom: 28px;
+    margin: 28px;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    text-shadow: 0px 8px 1px black;
+   
+}
+
+.Form-container{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: 2px -4px 2px rgba(14, 231, 247, 0.7);
+}
+
+
+.form-title{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    border-bottom: solid 1px rgba(14, 231, 247, 0.7);
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid rgba(14, 231, 247, 0.7);
+    padding: 0 10px;
+}
+
+.gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(14, 231, 247, 0.7);
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: white;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: white;
+    background: rgba(14, 231, 247, 0.7);
+    cursor: pointer;
+}
+
+.form-submit-btn input:hover{
+    background: rgba(1, 233, 250, 0.973);
+}
+
+  
+
+@media(max-width: 768px){
+    
+    body{
+        display: block;
+        position: relative;
+        margin: 30px;
+    }
+    .Caption{
+        text-align: center;
+        font-size: 16px;
+        margin: auto;     
+    }
+    .Form-container{
+        min-width: 280px;
+        margin-left: 0px;
+        position: absolute;
+        left: 50%;
+        transform: translate( -50%); 
+    }
+
+    .form-title{
+        font-size: 20px;
+    }
+
+    .user-input-box label{
+        font-size: 16px;
+    }
+
+    .gender-title{
+        font-size: 18px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+
+#fnameError,
+#lnameError,
+#passwordError,
+#cPasswordError,
+#emailError,
+#phonenumberError,
+#emailError{
+    position: absolute;
+    margin-top: 86px !important;
+    color: red;
+    margin-top: 10px;
+    
+}

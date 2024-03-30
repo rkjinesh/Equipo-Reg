@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration Form Equipo Health</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/JavaScript" src="myscripts.js" defer></script>
+  </head>
+  <body>
+    <div class="Caption">
+      
+      <h1>Teaming up to keep</h1>
+      <p>patients at the center of care</p>
+    </div>
+    <div class="Form-container">
+      <h1 class="form-title">Registration</h1>
+      <form action="/" id="form">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="firstName">First Name</label>
+            <input type="text" onkeyup="checkFiestName()"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter First Name"/>
+                    <span id="fnameError"></span>
+          </div>
+          <div class="user-input-box">
+            <label for="lastname">Last Name</label>
+            <input type="text"
+                    id="lastname"
+                    name="lastname" onkeyup="checkLastName()"
+                    placeholder="Enter Last Name"/>
+                    <span id="lnameError"></span>                    
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email" onkeyup="checkEmail()"
+                    placeholder="Enter Email"/>
+                    <span id="emailError"></span>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel"
+                    id="phoneNumber"
+                    name="phoneNumber" onkeyup="checkPhonenum()"
+                    placeholder="Enter Phone Number"/>
+                    <span id="phonenumberError"></span>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input type="password"
+                    id="password"
+                    name="password" onkeyup="checkPassword()"
+                    placeholder="Enter Password"/>
+                    <span id="passwordError"></span>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirm Password</label>  
+            <input type="password"
+                    id="confirmPassword"
+                    name="confirmPassword" onkeyup="checkConfpassword()"
+                    placeholder="Confirm Password"/>
+                    <span id="cPasswordError"></span>
+
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
